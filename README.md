@@ -19,9 +19,9 @@ mdadm --create --verbose /dev/md0 -l 10 -n 4 /dev/sd{b,c,d,e}
 cat /proc/mdstat
 ```
 	# The following should come out
- # Personalities : [raid10]
- # md0 : active raid10 sde[4] sdd[2] sdc[1] sdb[0]
- # 610304 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
+ 	# Personalities : [raid10]
+	# md0 : active raid10 sde[4] sdd[2] sdc[1] sdb[0]
+	# 610304 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
 	# Let's look at all disks
 	# create mdadm.conf file
 ```bash
